@@ -8,7 +8,7 @@ interface CardsProps{
 
 export const Cards = ({videos}:CardsProps) => {
   return (
-      <Container>
+      <Container column={false}>
         {videos.map((video:DB) => <Card {...video} key={video.id} />)}
       </Container>
   )
